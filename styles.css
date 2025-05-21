@@ -1,0 +1,605 @@
+/* routine */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+* {
+    box-sizing: border-box; 
+ } 
+ @font-face {
+    font-family: ParryHotter;
+    src: url(/fonts/ParryHotter.ttf);
+ }
+ @font-face {
+    font-family: HennyPenny;
+    src: url(/fonts/HennyPenny-Regular.ttf);
+ }
+ @font-face {
+    font-family: Risque;
+    src: url(/fonts/Risque-Regular.ttf);
+ }
+/* end of routine */
+
+
+/* commen css properites */
+body{
+    background-color: blueviolet;
+}
+header{
+    height: 600px;
+   
+}
+
+    
+
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    color: goldenrod;
+    padding: 40px;
+    font-family: ParryHotter;
+}
+
+h2{
+    font-size: 55px;
+    text-align: center;
+    padding: 20px;
+    font-family: ParryHotter;
+    color: rgb(252, 250, 250);
+}
+nav {
+    width: 100%;
+    background-color: orange;
+    height: 50px;
+    line-height: 50px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-size: 25px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    text-decoration: none;
+    display: block;
+    background-color: black;
+    color: burlywood;
+    transition: all .5s ease-in;
+}
+
+nav ul li a:hover {
+    background-color: burlywood;
+    color: black;
+}
+
+.fix2{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.team{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    box-shadow: black left 20px;
+    padding: 20px;
+   
+}
+.subtitle{
+    padding: 40px;
+    text-align: center;
+    font-size: 35px;
+    font-family: ParryHotter;
+}
+
+section{
+    padding: 20px;
+    display: block;
+
+    
+}
+section#two {
+    background-image: url("/project/images/wallpaper.jfif");
+    display: grid;
+   
+ 
+}
+p{
+    font-family: HennyPenny;
+    font-size: 20px;
+}
+#three p{
+    margin-top: 10px;
+}
+
+
+button{
+    background-color: darkcyan;
+    height: 150px;
+    width: 150px;
+    margin-left: 25%;
+    font-family: HennyPenny;
+    font-size: 20px;
+    
+}
+#three div p{
+    text-align: center;
+    font-size: 30px;
+}
+
+#card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#name{
+    font-family: ParryHotter;
+    font-size: 35px;
+    margin-top: 8px;
+}
+ul li {
+    font-family: Risque;
+}
+
+.fix{
+    width: 25%;
+    min-height: 400px ;
+    float: left;
+    background-color: darkgoldenrod;
+    padding: 5px;
+    margin: 1%;
+    border: solid 1.5px gray;
+}
+.fix ul{
+    list-style: none;
+    display: block;
+    margin: unset;
+    padding: unset;
+}
+.fix img{
+    height: 300px;
+}
+
+/* end of comman css properties */
+
+/* start photo carousel */
+
+
+#film img{
+    height: 650px;
+    
+}
+#frame{
+    width: 800px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px maroon;
+    display: none;
+}
+
+
+#frame #info{
+    display: none;
+    text-align: center;
+    font-size: 5em;
+    position: relative;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#hide {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+}
+
+#frame #back {
+    position: absolute;
+    top: 50%;
+    left: -200px;
+}
+#frame #next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+#frame #back, #frame #next {
+    transform: translateY(-50%);
+    font-size: 10em;
+    color: azure;
+    display: block;
+    height: 100%;
+    width: 150px;
+    opacity: 0;
+    z-index: 99999;
+}
+#frame #back:hover, #frame #next:hover {
+    background-color: blueviolet;
+    opacity: 1;
+    cursor: pointer;
+}
+#film {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 600px;
+}
+
+#coverTitle{
+    height: auto;
+    display: block;
+}
+#open{
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    
+
+}
+#open img{
+    background-color: rgba(253, 253, 251, 0.3);
+    border-radius: 40%;
+}
+
+/* end of photo carousel */
+
+
+
+/* burger meu for smartphone */
+header input , header label.mn{
+    display: none;
+}
+/* end of burger menu */
+
+/* sizes (557, 768, 1024, 1440)  */
+/* smartphone */
+@media screen and (max-width: 557px){
+    header label.mn{
+        display: block;
+        width: 50px;
+        height: 50px;
+        top: 10px;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 20%;
+    }
+    nav {
+        width: 300px;
+        background-color: yellowgreen;
+        position: fixed;
+        right: 0;
+        text-align: center;
+        height: 150px;
+        display: none;
+        top: 0; 
+
+        z-index: 10;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type:none ;
+        display: block;
+        /* width: 500px; */
+    }
+
+    nav ul li {
+        height: 50px;
+        line-height: 50px;
+        float: none;
+        width: 100%;
+        font-size: 2rem;
+        
+    }
+    header{
+        height: 300px;
+       
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    button{
+        background-color: darkcyan;
+        height: 100px;
+        width: 100px;
+        margin-left: 40%;
+    }
+    .team{
+        height: 100px;
+        width: 100px;
+        padding: 5px;
+       
+    }
+    .subtitle{
+        padding: 10px;
+        text-align: center;
+        font-size: 25px;
+        font-family: ParryHotter;
+    }
+    p{
+        font-size: 15px;
+    }
+    #three div p{
+        text-align: center;
+        font-size: 20px;
+    }
+    .fix{
+        width: 55%;
+        min-height: 400px ;
+        float: left;
+        background-color: darkgoldenrod;
+        padding: 5px;
+        margin: 1%;
+        border: solid 1.5px gray;
+    }
+    /* carousel */
+    #frame{
+        width: 300px;
+        height: auto;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: solid 1px maroon;
+        display: none;
+    }
+    #hide {
+        position: relative;
+        width: 300px;
+        height: 350px;
+        overflow: hidden;
+        margin: auto;
+    }
+    #frame #back, #frame #next {
+        transform: translateY(-50%);
+        font-size: 1em;
+        color: azure;
+        display: block;
+        height: 100%;
+        width: 50px;
+        opacity: 0;
+        z-index: 99999;
+    }
+    #frame #back {
+        position: absolute;
+        top: 50%;
+        left: -125px;
+    }
+    #frame #next {
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+    #film img{
+        width: 300px;
+    }
+    /* end of carousel */
+
+
+}
+
+
+
+
+/* end of smartphone */
+/* tablette */
+@media screen and (min-width: 558px) and (max-width: 857px){
+.fix{
+    width: 45%;
+    min-height: 400px ;
+    float: left;
+    background-color: darkgoldenrod;
+    padding: 5px;
+    margin: 1%;
+    border: solid 1.5px gray;
+}
+
+nav ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* carousel */
+#frame{
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px maroon;
+    display: none;
+}
+#hide {
+    position: relative;
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+    margin: auto;
+}
+#frame #back, #frame #next {
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: azure;
+    display: block;
+    height: 100%;
+    width: 50px;
+    opacity: 0;
+    z-index: 99999;
+}
+#frame #back {
+    position: absolute;
+    top: 50%;
+    left: -100px;
+}
+#frame #next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+#film img{
+    width: 400px;
+}
+/* end of carousel */
+    button{
+        background-color: darkcyan;
+        height: 150px;
+        width: 250px;
+        margin-left: 25%;
+        font-family: HennyPenny;
+        font-size: 20px;
+        
+    }
+}
+
+
+/* end of tablette */
+/* laptop */
+
+
+
+/* end of laptop */
+/* desktop */
+@media screen and (min-width: 1058px) {
+    .fix{
+        width: 35%;
+        max-width: 500px;
+        min-height: 400px ;
+        float: left;
+        background-color: darkgoldenrod;
+        padding: 5px;
+        margin: 1%;
+        border: solid 1.5px gray;
+    }
+    .fix ul{
+        list-style: none;
+        display: block;
+        margin: unset;
+        padding: unset;
+    }
+    .fix img{
+        height: 600px;
+    }
+    header{
+        height: 800px;
+    }
+    button{
+        background-color: darkcyan;
+        height: 150px;
+        width: 350px;
+        margin-left: 35%
+        
+    }
+
+    nav {
+        width: 100%;
+        background-color: orange;
+        height: 150px;
+        line-height: 150px;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    nav ul li {
+        float: left;
+        width: 20%;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    #frame #back {
+        position: absolute;
+        top: 50%;
+        left: -285px;
+    }
+    .team{
+        height: 240px;
+        width: 240px;
+        border-radius: 50%;
+        box-shadow: black left 20px;
+        padding: 20px;
+    
+    }
+    ul li {
+        font-family: Risque;
+        font-size: 25px;
+    }
+    p{
+        font-family: HennyPenny;
+        font-size: 30px;
+    }
+    #open{
+        display: block;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 65px;
+        right: 65px;
+        
+
+    }
+    #open img{
+        background-color: rgba(253, 253, 251, 0.3);
+        border-radius: 40%;
+    }
+    }
+
+
+
+/* end of desktop */
+
+/*   menu      ul.menu {
+            position: absolute;
+            z-index: 999;
+            left: -100%;
+            background-color: white;
+            width: 100%;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            height: 50%;
+            text-align: center;
+
+            transition: .4s;
+
+        } */

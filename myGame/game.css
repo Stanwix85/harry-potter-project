@@ -1,0 +1,116 @@
+@font-face {
+  font-family: ParryHotter;
+  src: url(/fonts/ParryHotter.ttf);
+}
+@font-face {
+  font-family: HennyPenny;
+  src: url(/fonts/HennyPenny-Regular.ttf);
+}
+@font-face {
+  font-family: Risque;
+  src: url(/fonts/Risque-Regular.ttf);
+}
+
+
+
+
+body {
+    text-align: center;
+    background-image: url("/images/game_wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  #level-title {
+    font-family: HennyPenny, cursive;
+    font-size: 3.5rem;
+    margin:  5%;
+    color: #FEF2BF;
+  }
+  
+  .container {
+    /* display: grid;
+    grid-template-columns: 2fr; */
+    width: 50%;
+    margin: auto;
+    
+    
+
+
+  
+  }
+  div{
+    padding: -10px;
+    margin: 0;
+  }
+  
+  .btn {
+    margin: 0px;
+    padding: 0px;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+    display: inline-table;
+  }
+  
+  .game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+  
+  .red {
+    background-color: red;
+    margin: 0;
+  }
+  
+  .green {
+    background-color: green;
+    margin: 0;
+  }
+  
+  .blue {
+    background-color: blue;
+    margin: 0;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+  }
+   .snitch {
+    background-image: url("/svg/snitch.svg");
+    background-size: cover;
+   }
+   li{
+    list-style: none;
+   }
+   footer{
+    margin-top: 50px;
+    color: white;
+   }
+
+   footer img{
+    background-color: white;
+    height: 20px;
+    width: 25px;
+    border-radius: 30%;
+   }
+   footer button{
+    height: 150px;
+    width: 300px;
+    border-radius: 20% ;
+    
+    opacity: 0.6;
+    font-family: HennyPenny, cursive;
+    font-size: 42px;
+    color: black;
+
+   }
+  

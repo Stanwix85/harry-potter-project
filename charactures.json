@@ -1,0 +1,65 @@
+[{
+    "name": "Harry Potter",
+    "Wand": "holly, phoenix feather",
+    "dob" : "31/07/1980",
+    "magicPower": 62,
+    "description": "The boy who lived, harry was marked by the dark lord and their lives became intwined",
+    "image": "/harry.jfif"
+},
+
+{
+    "name": "Hermione Granger",
+    "Wand" : "vine, dragon heartstring",
+    "dob" : "19/09/1979",
+    "magicPower": 60,
+    "description": "Hermione is a gifted muggle born witch, she studies hard and keeps her best friends Ron and Harry in line",
+    "image": "hermione.jfif"
+    },
+{
+    "name": "Ronald Weasley",
+    "Wand": "Willow, unicorn tail",
+    "dob" : "01/03/1980",
+    "magicPower": 45,
+    "description": "Ron is Harry and Hermione's best friend, between the three of them they help and support Harry through his trails",
+    "image": "ron.jfif"
+},
+{
+    "name": "Rubeus Hagrid",
+    "Wand": "oak",
+    "dob" : "06/12/1928",
+    "magicPower": 12,
+    "description": "Hagrid is keeper of keys and grounds at hogwarts, he has a foundness for exotic pets",
+    "image": "hagrid.jfif"
+},
+{
+    "name": "Albus Dumbledore",
+    "Wand": "Elder, Thestral tail",
+    "dob" : "31/08/1881",
+    "magicPower": 105,
+    "description": "During a long and eventful life Albus dumbledore was notably the headmaster of Hogwarts and battled dark forces dueling with Lord Voldemort and Grindelwald",
+    "image": "dumbledore.jfif"
+},
+{
+    "name": "Severus Snape",
+    "Wand": "Unknown",
+    "dob" : "09/01/1960",
+    "magicPower": 85,
+    "description": "Snape is the potion master at Hogwarts, he is a compicated character with a dark past",
+    "image": "snape.jfif"
+},
+{
+    "name": "Lord Voldemort",
+    "Wand": "Yew, phoenix feather",
+    "dob" : "31/12/1926",
+    "magicPower": 100,
+    "description": "Tom Riddle became Lord voldemort the darkest and most feared wizard ever, he ran a group called the death eaters.",
+    "image": "voldemort.jfif"
+},
+{
+    "name": "Draco Malfoy",
+    "Wand": "Hawthorn, unicorn hair",
+    "dob" : "05/06/1980",
+    "magicPower": 42,
+    "description": "Draco was born into a privileged wizarding family and had his father's strong ideas instilled in him, Draco became a death eater at only 17",
+    "image": "draco.jfif"
+}]
